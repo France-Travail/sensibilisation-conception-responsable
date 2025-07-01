@@ -3,106 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principes de l'Écoconception - Conception Responsable</title>
+    <meta name="description" content="Définition de l'écoconception de services numériques, ses piliers, son cycle de vie et ses approches.">
+    <meta name="keywords" content="écoconception, définition, principes, cycle de vie, numérique responsable, Green IT">
+    <meta name="author" content="France Travail">
+    <title>Définition - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="../impacts/impacts.html">Impacts</a></li>
-                <li><a href="definition.html" class="active">Principes</a></li>
-                <li><a href="../bonnes-pratiques/strategie-pilotage.html">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="definition.html">Définition</a></li>
+                            <li><a href="benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="../bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="../bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="../bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="../bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="../bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> > Principes de l'Écoconception
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Principes de l'Écoconception</h1>
-            <p>Découvrez les fondements d'une conception numérique responsable et ses multiples bénéfices</p>
-        </section>
-
-        <section class="introduction">
-            <h2>Concevoir autrement pour un numérique durable</h2>
-            <p>L'écoconception numérique repose sur des principes fondamentaux qui permettent de créer des services performants tout en minimisant leur impact environnemental. Une approche gagnante pour tous : utilisateurs, organisations et planète.</p>
-        </section>
-
-        <section class="principles-grid">
-            <div class="principle-card">
-                <div class="principle-card-header">
-                    <h3><span class="icon">🌱</span> Qu'est-ce que l'écoconception ?</h3>
-                </div>
-                <div class="principle-card-content">
-                    <p style="margin-bottom: 1.5rem;">L'écoconception vise à proposer des services numériques dont les impacts sur l'environnement sont réduits à chaque étape du cycle de vie.</p>
-                    
-                    <div class="pillars-preview">
-                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Les 4 piliers fondamentaux</h4>
-                        <div class="pillars-visual">
-                            <div class="pillar-item"><div class="pillar-icon yellow">⚡</div><p class="pillar-label">Simplicité</p></div>
-                            <div class="pillar-item"><div class="pillar-icon purple">💧</div><p class="pillar-label">Frugalité</p></div>
-                            <div class="pillar-item"><div class="pillar-icon blue">🎯</div><p class="pillar-label">Pertinence</p></div>
-                            <div class="pillar-item"><div class="pillar-icon pink">♻️</div><p class="pillar-label">Durabilité</p></div>
-                        </div>
-                    </div>
-                    <p style="margin-top: 1.5rem;"><strong>Objectif principal :</strong> Réduire la quantité de moyens matériels nécessaires au fonctionnement d'un service numérique.</p>
-                </div>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Qu'est-ce que l'écoconception de services numériques ?</h1>
             </div>
-
-            <a href="benefices.html" class="principle-card">
-                <div class="principle-card-header">
-                    <h3><span class="icon">✨</span> Les bénéfices de l'écoconception</h3>
-                </div>
-                <div class="principle-card-content">
-                    <p style="margin-bottom: 1.5rem;">L'écoconception permet de répondre à de multiples enjeux au-delà de l'environnement.</p>
-                    
-                    <div class="benefits-preview-grid">
-                        <div class="benefit-item"><div class="benefit-icon">🌿</div><p class="benefit-label">Environnement</p></div>
-                        <div class="benefit-item"><div class="benefit-icon">⚡</div><p class="benefit-label">Performance</p></div>
-                        <div class="benefit-item"><div class="benefit-icon">💰</div><p class="benefit-label">Coûts</p></div>
-                        <div class="benefit-item"><div class="benefit-icon">👤</div><p class="benefit-label">UX</p></div>
-                        <div class="benefit-item"><div class="benefit-icon">🔒</div><p class="benefit-label">Sécurité</p></div>
-                        <div class="benefit-item"><div class="benefit-icon">⚖️</div><p class="benefit-label">Législatif</p></div>
-                    </div>
-
-                    <div class="lifecycle-preview">
-                        <p class="lifecycle-stat">80%</p>
-                        <p class="lifecycle-text">des gains ont lieu au moment de la conception</p>
-                    </div>
-                    <span class="cta-link">Explorer tous les bénéfices</span>
-                </div>
-            </a>
         </section>
 
-        <section class="key-points">
-            <h2>Points clés à retenir</h2>
-            <div class="key-points-grid">
-                <div class="key-point">
-                    <h3>🎯 Une approche globale</h3>
-                    <p>L'écoconception s'applique à tout le cycle de vie d'un service numérique, de sa conception à son décommissionnement.</p>
+        <section id="definition" class="practice-section section-bg-alt" aria-labelledby="definition-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🌱</span>
+                    <h2 id="definition-title">Définition</h2>
                 </div>
-                <div class="key-point">
-                    <h3>🚀 Agir tôt pour maximiser l'impact</h3>
-                    <p>80% des gains environnementaux sont réalisés lors de la phase de conception, d'où l'importance d'intégrer ces principes dès le début.</p>
-                </div>
-                <div class="key-point">
-                    <h3>🎨 Exemple concret : optimiser les parcours</h3>
-                    <p>Concevoir un parcours utilisateur simple et optimisé permet de réduire le nombre d'étapes, d'actions et donc l'impact environnemental.</p>
+                <div class="practice-intro">
+                    <blockquote>L'écoconception vise à proposer des services numériques dont les <strong>impacts sur l'environnement sont réduits</strong> à chaque étape du cycle de vie. Concrètement, écoconcevoir consiste, à qualité de service constante, à <strong>réduire la quantité de moyens matériels nécessaires</strong> à son fonctionnement.</blockquote>
                 </div>
             </div>
         </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="pillars" class="objectives" aria-labelledby="pillars-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem; justify-content: center;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🏛️</span>
+                    <h2 id="pillars-title">Les 4 Piliers de l'Écoconception</h2>
+                </div>
+                <div class="objectives-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="objective-card"><h3>Simplicité</h3></div>
+                    <div class="objective-card"><h3>Frugalité</h3></div>
+                    <div class="objective-card"><h3>Pertinence</h3></div>
+                    <div class="objective-card"><h3>Durabilité</h3></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="lifecycle" class="practice-section section-bg-alt" aria-labelledby="lifecycle-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🔄</span>
+                    <h2 id="lifecycle-title">Une démarche sur tout le cycle de vie</h2>
+                </div>
+                <div class="practice-intro">
+                    <p>L'écoconception s'applique de la conception à la fin de vie d'un service numérique. Cependant, le plus grand levier d'action se situe en amont.</p>
+                    <blockquote class="highlight"><strong>80% des gains</strong> ont lieu au moment de la conception !</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="approaches" class="practice-section" aria-labelledby="approaches-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                     <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🛠️</span>
+                    <h2 id="approaches-title">Deux approches complémentaires</h2>
+                </div>
+                 <div class="practice-details-grid" style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div class="practice-how-to" style="flex: 1;">
+                        <h3>Écoconcevoir "by design" (Flux)</h3>
+                        <p>Cette approche permet d'agir dès la conception sur les nouveaux services. C'est la méthode la plus impactante pour réduire l'empreinte carbone.</p>
+                    </div>
+                    <div class="practice-how-to" style="flex: 1;">
+                        <h3>Optimiser l'existant (Stock)</h3>
+                        <p>Permet d'agir sur un service existant en améliorant les développements, le paramétrage, l'infrastructure, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="components" class="objectives section-bg-alt" aria-labelledby="components-title">
+            <div class="container">
+                 <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem; justify-content: center;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🧩</span>
+                    <h2 id="components-title">Agir sur tous les composants</h2>
+                </div>
+                <p class="objectives-intro">L'écoconception agit sur l'ensemble des composants d'un service numérique, de manière directe ou indirecte.</p>
+                <div class="objectives-grid">
+                    <div class="objective-card"><h3>Infrastructures</h3><p>Par le choix de l'hébergement, la rationalisation des serveurs, etc. (Levier direct)</p></div>
+                    <div class="objective-card"><h3>Logiciels</h3><p>En concevant des applications sobres, simples et optimisées. (Levier direct)</p></div>
+                    <div class="objective-card"><h3>Terminaux Utilisateurs</h3><p>Un logiciel sobre nécessite moins de puissance, ce qui prolonge la durée de vie du matériel. (Levier indirect)</p></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
-        <div class="license"><p><strong>Licence MIT</strong></p><p>Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.</p></div>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
