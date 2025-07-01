@@ -1,20 +1,217 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Bonnes Pratiques pour l&#39;UI Design - Conception Responsable&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;nav&gt;
-            &lt;h1&gt;&lt;a href=&quot;../index.html&quot;&gt;Conception Responsable de Service Numérique&lt;/a&gt;&lt;/h1&gt;
-            &lt;ul class=&quot;nav-links&quot;&gt;
-                &lt;li&gt;&lt;a href=&quot;../impacts/impacts.html&quot;&gt;Impacts&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;../principes/definition.html&quot;&gt;Principes&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;Bonnes Pratiques&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;../mise-en-oeuvre/lancer-demarche.html&quot;&gt;Mise en Œuvre&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/header&gt;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les bonnes pratiques d'écoconception pour l'Interface Utilisateur (UI) : design sobre, optimisation des contenus et sobriété fonctionnelle.">
+    <meta name="keywords" content="écoconception, UI design, interface utilisateur, design sobre, optimisation images, Green IT">
+    <meta name="author" content="France Travail">
+    <title>Bonnes Pratiques UI - Conception Responsable de Services Numériques</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="ux.html">UX Design</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
+                            <li><a href="developpement.html">Développement</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Bonnes Pratiques pour l'Interface Utilisateur (UI)</h1>
+                <p class="hero-subtitle">Le travail de conception réalisé en amont sur l'interface aura un impact bien supérieur à l’optimisation minutieuse des lignes de code.</p>
+            </div>
+        </section>
+
+        <section id="axe1" class="practice-section section-bg-alt" aria-labelledby="axe1-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🎨</span>
+                    <h2 id="axe1-title">Axe 1 : Adopter un design sobre et épuré</h2>
+                </div>
+                <div class="practice-intro">
+                    <p><span aria-hidden="true">📈</span> <strong>Le constat :</strong> Le poids des pages web a été multiplié par 115 entre 1995 et 2015. Les images représentent en moyenne 45% du poids total d’une page.</p>
+                    <p><span aria-hidden="true">🎯</span> <strong>L'objectif :</strong> Afficher seulement les éléments qui apportent réellement de la valeur à l’utilisateur.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li>Supprimer les éléments purement décoratifs.</li>
+                        <li>Limiter le nombre d’éléments (polices, couleurs, etc.). Par exemple, se limiter à deux types de polices de caractères.</li>
+                        <li>Éviter d’utiliser des animations complexes (javascript et CSS) et des carrousels.</li>
+                        <li>Privilégier du texte, voire un schéma, plutôt qu'une vidéo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe2" class="practice-section" aria-labelledby="axe2-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🖼️</span>
+                    <h2 id="axe2-title">Axe 2 : Optimiser les contenus</h2>
+                </div>
+                <div class="practice-intro">
+                    <p><span aria-hidden="true">📈</span> <strong>Le constat :</strong> L’optimisation des images permet un gain de performance de 15% à 20%.</p>
+                    <p><span aria-hidden="true">🎯</span> <strong>L'objectif :</strong> Optimiser au maximum les éléments, tout en assurant le confort visuel des utilisateurs.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Minimiser la taille des éléments :</strong> Réduire les dimensions des images et compresser leur définition.</li>
+                        <li><strong>Utiliser des formats optimisés :</strong>
+                            <ul>
+                                <li>Pour les images, les formats <strong>AVIF</strong> et <strong>WebP</strong> offrent de bien meilleures performances que JPG ou PNG.</li>
+                                <li>Pour les polices, le format <strong>WOFF2</strong> est bien plus efficace que les formats plus anciens.</li>
+                            </ul>
+                        </li>
+                        <li>Proposer plusieurs tailles d'images en fonction des dimensions de l’écran du terminal.</li>
+                    </ul>
+                </div>
+                <div class="practice-illustration">
+                    <h3>Illustration</h3>
+                    <div class="illustration-grid" style="display: flex; gap: 2rem; align-items: center;">
+                        <figure class="illustration-card bad" style="flex: 1;">
+                            <img src="../assets/images/initial.jpg" alt="Image au format JPG" style="width: 100%; object-fit: contain;">
+                            <figcaption>Format JPG : <strong>165 ko</strong></figcaption>
+                        </figure>
+                        <figure class="illustration-card good" style="flex: 1;">
+                            <img src="../assets/images/final.avif" alt="Image optimisée au format AVIF" style="width: 100%; object-fit: contain;">
+                            <figcaption>Format AVIF : <strong>20,7 ko</strong> (-87,5%)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe3" class="practice-section section-bg-alt" aria-labelledby="axe3-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                     <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🌿</span>
+                    <h2 id="axe3-title">Axe 3 : Adopter des pratiques favorisant la sobriété</h2>
+                </div>
+                 <div class="practice-intro">
+                    <p><span aria-hidden="true">📈</span> <strong>Le constat :</strong> Les flux vidéo représentaient 80% des flux de données mondiaux en 2018.</p>
+                    <p><span aria-hidden="true">🎯</span> <strong>L'objectif :</strong> Minimiser la consommation d’énergie et de ressources induites lors de la navigation.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li>Utiliser un mécanisme de <strong>chargement différé</strong> (lazy loading) pour les contenus qui apparaissent hors de l'écran.</li>
+                        <li><strong>Désactiver la lecture automatique</strong> et la lecture en boucle des contenus vidéo.</li>
+                        <li>Arrêter la lecture des vidéos lorsqu'elles sortent du cadre de visualisation.</li>
+                        <li><strong>Optimiser les formulaires :</strong> Indiquer les formats de saisie attendus et limiter le poids et les formats des fichiers que l'utilisateur peut transmettre.</li>
+                    </ul>
+                </div>
+                <div class="practice-casestudy">
+                    <h3>Étude de cas : l'opération de décarbonation de l'ADEME</h3>
+                    <p>L'optimisation de 10 sites web a permis d'obtenir les résultats suivants :</p>
+                    <ul>
+                        <li>54% de bande passante économisée.</li>
+                        <li>925 kg d’équivalent CO2 évités pour 10 000 visites.</li>
+                        <li>30% de gain en vitesse de chargement.</li>
+                    </ul>
+                    <p>Ce travail a été réalisé en 2 à 5 jours par site et portait à 80% sur la présentation du contenu. <a href="https://infos.ademe.fr/magazine-mai-2022/terrain/operation-decarbonation-pour-10-sites-web/" target="_blank" rel="noopener noreferrer">En savoir plus</a>.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

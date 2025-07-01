@@ -3,94 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonnes Pratiques pour l'UX Design - Conception Responsable</title>
+    <meta name="description" content="Découvrez les bonnes pratiques d'écoconception pour l'Expérience Utilisateur (UX) : limiter les fonctionnalités, optimiser les parcours, et ne pas retenir l'attention.">
+    <meta name="keywords" content="écoconception, UX design, expérience utilisateur, numérique responsable, bonnes pratiques">
+    <meta name="author" content="France Travail">
+    <title>Bonnes Pratiques UX - Conception Responsable de Services Numériques</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="../impacts/impacts.html">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="ux.html">UX Design</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
+                            <li><a href="developpement.html">Développement</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> &gt; 
-        <a href="index.html">Bonnes Pratiques</a> &gt; 
-        UX Design
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Bonnes Pratiques pour l'UX Design</h1>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Bonnes Pratiques pour l'Expérience Utilisateur (UX)</h1>
+                <p class="hero-subtitle">La phase de conception est celle qui possède le plus grand potentiel de réduction de l’empreinte environnementale.</p>
+            </div>
         </section>
 
-        <section>
-            <p>L'UX Designer joue un rôle crucial en écoconception. Un parcours utilisateur simple et efficace est par nature moins consommateur de ressources, car il réduit le nombre d'actions, de pages vues et de temps passé à chercher l'information.</p>
-        </section>
-
-        <section>
-            <h2>Axe 1 : Simplifier et optimiser les parcours</h2>
-            <h3>Le constat :</h3>
-            <p>Des parcours complexes et longs forcent les utilisateurs à charger plus de pages et à effectuer plus d'actions, ce qui consomme inutilement des ressources serveur et client.</p>
-            <h3>L'objectif :</h3>
-            <p>Permettre à l'utilisateur d'atteindre son but le plus rapidement et avec le moins d'étapes possible.</p>
-            
-            <h4>Exemple : Le parcours de candidature</h4>
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
-                <div style="flex: 1; min-width: 300px; border: 2px solid #10b981; padding: 1rem; border-radius: 8px;">
-                    <h5 style="color: #10b981;">✔️ Parcours optimisé</h5>
-                    <p>La candidature simplifiée permet de postuler directement, sans quitter le site. Le parcours est court et fluide.</p>
-                    <img src="../assets/images/indeed.png" alt="Exemple de parcours de candidature simple sur Indeed" style="width: 100%; margin-top: 1rem; border-radius: 4px;">
+        <section id="axe1" class="practice-section section-bg-alt" aria-labelledby="axe1-title">
+            <div class="container">
+                <div class="practice-header">
+                    <h2 id="axe1-title">Axe 1 : Limiter le nombre de fonctionnalités</h2>
                 </div>
-                <div style="flex: 1; min-width: 300px; border: 2px solid #ef4444; padding: 1rem; border-radius: 8px;">
-                    <h5 style="color: #ef4444;">❌ Parcours complexe</h5>
-                    <p>Ici, l'utilisateur est redirigé vers le site de l'entreprise, ce qui ajoute des étapes et un temps de chargement supplémentaire.</p>
-                    <img src="../assets/images/apec.png" alt="Exemple de parcours de candidature complexe sur APEC" style="width: 100%; margin-top: 1rem; border-radius: 4px;">
+                
+                <div class="practice-details-grid">
+                    <div class="practice-intro">
+                        <p><strong>Le constat :</strong> 70% des fonctionnalités proposées aux utilisateurs ne sont jamais ou rarement utilisées.</p>
+                        <p><strong>L'objectif :</strong> Développer uniquement les fonctionnalités réellement nécessaires.</p>
+                    </div>
+                    <div class="practice-how-to">
+                        <h3>Comment faire ?</h3>
+                        <ul>
+                            <li>Vérifier l’utilité et prioriser chaque fonctionnalité en amont de son développement.</li>
+                            <li>Mesurer le taux d’utilisation des fonctionnalités et la satisfaction des utilisateurs.</li>
+                            <li>Supprimer les fonctionnalités si elles sont obsolètes ou trop peu utilisées, ou les optimiser.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="practice-illustration">
+                    <h3>Illustration</h3>
+                    <div class="illustration-grid" style="display: flex; gap: 2rem;">
+                        <figure class="illustration-card bad" style="flex: 1;">
+                            <img src="../assets/images/bing.png" alt="Interface chargée du moteur de recherche Bing" style="height: 280px; width: 100%; object-fit: contain;">
+                            <figcaption>+20 fonctionnalités<br><strong>2,62g CO₂eq</strong> par consultation</figcaption>
+                        </figure>
+                        <figure class="illustration-card good" style="flex: 1;">
+                            <img src="../assets/images/google.png" alt="Interface épurée du moteur de recherche Google" style="height: 280px; width: 100%; object-fit: contain;">
+                            <figcaption>4 fonctionnalités<br><strong>1,45g CO₂eq</strong> par consultation</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-
-            <h3 style="margin-top: 2rem;">Comment faire ?</h3>
-            <ul>
-                <li><strong>Identifier les parcours critiques :</strong> Utiliser les données analytiques pour cibler les 20% de parcours qui concentrent 80% du trafic et les optimiser en priorité.</li>
-                <li><strong>Réduire le nombre d'étapes :</strong> Analyser chaque étape d'un parcours en se demandant si elle est indispensable. Peut-on regrouper des actions ? Peut-on supprimer un clic ?</li>
-                <li><strong>Faciliter la recherche :</strong> Implémenter un moteur de recherche interne performant et pertinent pour permettre un accès direct à l'information.</li>
-                <li><strong>Anticiper les besoins :</strong> Proposer des contenus ou des actions contextuelles pour éviter à l'utilisateur de naviguer inutilement.</li>
-            </ul>
         </section>
 
-        <section>
-            <h2>Axe 2 : Guider l'utilisateur pour éviter les erreurs</h2>
-            <h3>Le constat :</h3>
-            <p>Les erreurs de saisie ou de navigation génèrent des allers-retours frustrants pour l'utilisateur et coûteux en ressources (nouvelles requêtes, rechargement de pages).</p>
-            <h3>L'objectif :</h3>
-            <p>Concevoir des interfaces qui préviennent les erreurs et guident l'utilisateur de manière claire.</p>
-            <h3>Comment faire ?</h3>
-            <ul>
-                <li><strong>Validation en temps réel :</strong> Valider les champs de formulaire au fur et à mesure de la saisie pour donner un feedback immédiat, plutôt que d'attendre la soumission.</li>
-                <li><strong>Messages d'erreur clairs :</strong> Rédiger des messages qui expliquent clairement le problème et la manière de le résoudre.</li>
-                <li><strong>Tests utilisateurs :</strong> Organiser des tests pour identifier les points de friction, les incompréhensions et les "cas d'échec" dans les parcours.</li>
-                <li><strong>Utiliser l'autocomplétion :</strong> Proposer des suggestions pour les champs de recherche, les adresses, etc., pour accélérer la saisie et réduire les erreurs.</li>
-            </ul>
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe2" class="practice-section" aria-labelledby="axe2-title">
+            <div class="container">
+                <div class="practice-header">
+                    <h2 id="axe2-title">Axe 2 : Optimiser le parcours utilisateur</h2>
+                </div>
+
+                <div class="practice-details-grid">
+                    <div class="practice-intro">
+                        <p><strong>Le constat :</strong> Pour chaque Go de données généré par un parcours client, ce sont en moyenne 18 à 50 gCO₂eq qui sont rejetés.</p>
+                        <p><strong>L'objectif :</strong> Concevoir un parcours utilisateur simple et optimisé pour diminuer le nombre d'étapes et d’actions.</p>
+                    </div>
+                    <div class="practice-how-to">
+                        <h3>Comment faire ?</h3>
+                        <ul>
+                            <li>Cibler les parcours les plus fréquents puis optimiser leur usage.</li>
+                            <li>Sonder les utilisateurs et analyser les données (analytics) pour identifier les points de friction.</li>
+                            <li>Implémenter un moteur de recherche interne pour un accès direct à l'information.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="practice-illustration">
+                    <h3>Illustration</h3>
+                     <div class="illustration-grid" style="display: flex; gap: 2rem;">
+                        <figure class="illustration-card bad" style="flex: 1;">
+                            <img src="../assets/images/apec.png" alt="Parcours de recherche d'emploi sur le site APEC" style="height: 280px; width: 100%; object-fit: contain;">
+                            <figcaption>4 étapes / 4 pages<br><strong>8,3g CO₂eq</strong></figcaption>
+                        </figure>
+                        <figure class="illustration-card good" style="flex: 1;">
+                            <img src="../assets/images/indeed.png" alt="Parcours de recherche d'emploi sur le site Indeed" style="height: 280px; width: 100%; object-fit: contain;">
+                            <figcaption>3 étapes / 2 pages<br><strong>5g CO₂eq</strong></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe3" class="practice-section section-bg-alt" aria-labelledby="axe3-title">
+            <div class="container">
+                <div class="practice-header">
+                    <h2 id="axe3-title">Axe 3 : Ne pas retenir l'attention de l'utilisateur</h2>
+                </div>
+
+                <div class="practice-details-grid">
+                     <div class="practice-intro">
+                        <p><strong>Le constat :</strong> Le trafic de données (+25% par an) représente 55% de la consommation d’énergie annuelle mondiale du numérique. Les usages sont le produit du design d'un service.</p>
+                        <p><strong>L'objectif :</strong> Éviter, dans la mesure du possible, d’utiliser des mécanismes conçus pour capter l'attention.</p>
+                    </div>
+                    <div class="practice-how-to">
+                        <h3>Comment faire ?</h3>
+                        <ul>
+                            <li>Minimiser les notifications et augmenter leur pertinence.</li>
+                            <li>Permettre à l’utilisateur de désactiver ou de régler facilement les notifications.</li>
+                            <li>Éviter les défilements infinis (infinite scroll).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="references">
-            <h3>Sources</h3>
-            <ul>
-                <li>Référentiel Général d'Écoconception de Services Numériques (RGESN)</li>
-                <li>Checklist "Design éthique & durable"</li>
-            </ul>
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe4" class="practice-section" aria-labelledby="axe4-title">
+            <div class="container">
+                 <div class="practice-header">
+                    <h2 id="axe4-title">Axe 4 : Minimiser les données collectées</h2>
+                </div>
+                
+                <div class="practice-details-grid">
+                    <div class="practice-intro">
+                        <p><strong>Le constat :</strong> 32% des données d’une entreprise sont inutiles. Sur les sites médias, 70% de l'empreinte carbone proviennent des publicités et des statistiques.</p>
+                        <p><strong>L'objectif :</strong> Collecter, échanger et stocker uniquement les données essentielles.</p>
+                    </div>
+                    <div class="practice-how-to">
+                        <h3>Comment faire ?</h3>
+                        <ul>
+                            <li>Vérifier la disponibilité des données avant de recréer une nouvelle structure de données.</li>
+                            <li>Minimiser les données utilisateurs collectées.</li>
+                            <li>S’assurer que les données collectées sont en accord avec l’usage de l'utilisateur.</li>
+                            <li>Définir une durée de conservation des données.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

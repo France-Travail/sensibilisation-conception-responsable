@@ -3,79 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonnes Pratiques pour la Stratégie & le Pilotage - Conception Responsable</title>
+    <meta name="description" content="Bonnes pratiques d'écoconception pour la stratégie et le pilotage de projet : processus, indicateurs de performance et accessibilité.">
+    <meta name="keywords" content="écoconception, stratégie, pilotage, gouvernance, Green IT, numérique responsable">
+    <meta name="author" content="France Travail">
+    <title>Bonnes Pratiques Stratégie & Pilotage - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="../impacts/impacts.html">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="ux.html">UX Design</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
+                            <li><a href="developpement.html">Développement</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> &gt; 
-        <a href="index.html">Bonnes Pratiques</a> &gt; 
-        Stratégie & Pilotage
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Bonnes Pratiques pour la Stratégie & le Pilotage (PO/PM)</h1>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Bonnes Pratiques pour la Stratégie et le Pilotage</h1>
+                <p class="hero-subtitle">La stratégie d’écoconception doit être définie et appliquée tout au long du cycle de vie d’un service numérique.</p>
+            </div>
         </section>
 
-        <section>
-            <p>Le pilotage produit est le premier maillon de la chaîne de l'écoconception. C'est à ce niveau que les décisions les plus impactantes sont prises, notamment en définissant ce qui doit être développé, ou non.</p>
+        <section id="axe1" class="practice-section section-bg-alt" aria-labelledby="axe1-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">📝</span>
+                    <h2 id="axe1-title">Définir et Documenter les Processus Internes</h2>
+                </div>
+                <div class="practice-intro">
+                  <p><strong>Objectif :</strong> Intégrer l’écoconception dans la gestion du cycle de vie du service numérique.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Intégrer l'écoconception dans le backlog :</strong> Ajouter la dimension écoconception aux features, aux User Stories et à leurs critères d’acceptance.</li>
+                        <li><strong>Définir des rituels dédiés :</strong> Mettre en place des revues de code et de conception, et organiser des points réguliers avec un référent pour décliner les bonnes pratiques.</li>
+                        <li><strong>Documenter les choix :</strong> Documenter les choix techniques effectués vis-à-vis de l’écoconception, ainsi que les bonnes pratiques appliquées.</li>
+                        <li><strong>Prévoir la fin de vie :</strong> Définir une stratégie de décommissionnement du service.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Axe 1 : Définir une stratégie sobre</h2>
-            <h3>Le constat :</h3>
-            <p>70% des fonctionnalités demandées sont rarement ou jamais utilisées, mais leur développement et leur maintenance ont un coût environnemental certain.</p>
-            <h3>L'objectif :</h3>
-            <p>Se concentrer sur les fonctionnalités qui apportent une réelle valeur ajoutée aux utilisateurs et à l'organisation.</p>
-            <h3>Comment faire ?</h3>
-            <ul>
-                <li><strong>Questionner le besoin :</strong> Appliquer la méthode "5 Pourquoi" pour chaque nouvelle demande de fonctionnalité. Est-ce vraiment nécessaire ?</li>
-                <li><strong>Prioriser par la valeur :</strong> Utiliser des matrices de priorisation (ex: MoSCoW, RICE) en y intégrant un critère "impact environnemental".</li>
-                <li><strong>Définir des indicateurs de succès (KPIs) :</strong> Mesurer l'usage réel des fonctionnalités et prévoir un processus pour décommissionner celles qui ne sont pas utilisées.</li>
-                <li><strong>Adopter une approche MVP (Minimum Viable Product) :</strong> Lancer des produits avec le strict minimum de fonctionnalités pour répondre au besoin principal, puis itérer en fonction des retours utilisateurs.</li>
-            </ul>
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe2" class="practice-section" aria-labelledby="axe2-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">📊</span>
+                    <h2 id="axe2-title">Définir et Suivre des Indicateurs</h2>
+                </div>
+                <div class="practice-intro">
+                    <blockquote>"Ce qui ne se mesure pas ne s’améliore pas" <cite>– William Edouard Deming</cite></blockquote>
+                    <p><strong>Objectif :</strong> Définir des indicateurs, se fixer des objectifs à atteindre et mettre en place un pilotage.</p>
+                </div>
+                 <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Définir un budget environnemental :</strong> Se fixer un nombre maximal de requêtes et d’éléments du DOM pour une page.</li>
+                        <li><strong>Suivre la performance :</strong> Suivre les métriques fournies par les Core Web Vitals.</li>
+                        <li><strong>Suivre l'expérience utilisateur :</strong> Surveiller les indicateurs d’Analytics et de qualité de page.</li>
+                        <li><strong>Mettre en place des tests :</strong> Identifier et mettre en place les outils permettant les tests d’écoconception (mesure de l'empreinte, performance, etc.) et automatiser ceux qui peuvent l'être.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe3" class="practice-section section-bg-alt" aria-labelledby="axe3-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">👥</span>
+                    <h2 id="axe3-title">S'assurer que le Service soit Utilisable par Tous</h2>
+                </div>
+                <div class="practice-intro">
+                    <p><strong>Le problème à résoudre :</strong> Les services numériques lourds et lents induisent une obsolescence matérielle. L'utilisateur dont le terminal "rame" aura tendance à le renouveler pour pallier cette lenteur. L'écoconception permet d'agir contre ce phénomène.</p>
+                    <p><strong>Objectif :</strong> Permettre aux personnes disposant de moyens matériels limités d’accéder au service numérique.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Définir les matériels supportés :</strong> Définir les profils de matériels (anciens appareils, etc.) qui doivent pouvoir utiliser le service.</li>
+                        <li><strong>Concevoir pour les faibles débits :</strong> S'assurer que le service reste compatible avec des connexions réseau limitées.</li>
+                        <li><strong>Penser à l'accessibilité :</strong> Concevoir un service numérique accessible par tous.</li>
+                        <li><strong>Être transparent :</strong> Publier une déclaration d’écoconception pour témoigner de l'engagement de l'entreprise.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Axe 2 : Intégrer l'écoconception dans le backlog</h2>
-            <h3>Le constat :</h3>
-            <p>Si l'écoconception n'est pas formalisée dans les outils de suivi de projet, elle risque d'être oubliée.</p>
-            <h3>L'objectif :</h3>
-            <p>Rendre les exigences d'écoconception visibles et actionnables pour toute l'équipe.</p>
-            <h3>Comment faire ?</h3>
-            <ul>
-                <li><strong>Créer des User Stories spécifiques :</strong> Rédiger des US ou des tâches techniques dédiées à l'optimisation (ex: "En tant que système, je compresse les images pour réduire le temps de chargement").</li>
-                <li><strong>Ajouter des critères d'acceptance :</strong> Inclure des exigences de sobriété dans la "Definition of Done" (DoD) de vos User Stories (ex: "La page doit se charger en moins de X secondes", "Le poids de la page ne doit pas dépasser Y Ko").</li>
-                <li><strong>Allouer du temps :</strong> Prévoir explicitement dans les sprints du temps pour l'optimisation et la "dette environnementale".</li>
-                <li><strong>Former l'équipe :</strong> S'assurer que tous les membres de l'équipe comprennent les enjeux et les bonnes pratiques de l'écoconception.</li>
-            </ul>
-        </section>
-
-        <section class="references">
-            <h3>Sources</h3>
-            <ul>
-                <li>Référentiel Général d'Écoconception de Services Numériques (RGESN)</li>
-                <li>The Shift Project - "Pour une sobriété numérique"</li>
-            </ul>
-        </section>
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

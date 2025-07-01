@@ -3,80 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonnes Pratiques pour le Développement - Conception Responsable</title>
+    <meta name="description" content="Bonnes pratiques d'écoconception pour le développement Front-End et Back-End : optimiser le code, les requêtes et les ressources.">
+    <meta name="keywords" content="écoconception, développement, front-end, back-end, optimisation code, Green IT">
+    <meta name="author" content="France Travail">
+    <title>Bonnes Pratiques Développement - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="../impacts/impacts.html">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="index.html" class="active">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="ux.html">UX Design</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
+                            <li><a href="developpement.html">Développement</a></li>
+                            <li><a href="architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> &gt; 
-        <a href="index.html">Bonnes Pratiques</a> &gt; 
-        Développement
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Bonnes Pratiques pour le Développement</h1>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Bonnes Pratiques pour le Développement</h1>
+                <p class="hero-subtitle">La qualité, la pertinence et l'efficacité du code ont un impact direct sur la consommation de ressources côté serveur et côté client.</p>
+            </div>
         </section>
 
-        <section>
-            <p>Le développeur est au cœur de la mise en œuvre technique de l'écoconception. La qualité, la pertinence et l'efficacité du code ont un impact direct sur la consommation de ressources côté serveur et côté client.</p>
+        <section id="axe1" class="practice-section section-bg-alt" aria-labelledby="axe1-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">💻</span>
+                    <h2 id="axe1-title">Axe 1 : Optimiser le code Front-End</h2>
+                </div>
+                <div class="practice-intro">
+                    <p><strong>Le constat :</strong> Un code Front-End lourd et non optimisé ralentit l'affichage, augmente la consommation de batterie et rend le service inutilisable sur des terminaux anciens ou des connexions faibles.</p>
+                    <p><strong>L'objectif :</strong> Envoyer au navigateur le strict minimum de code (HTML, CSS, JS) et s'assurer qu'il est exécuté de la manière la plus efficace possible.</p>
+                </div>
+                <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Limiter les dépendances :</strong> Questionner la nécessité de chaque librairie ou framework.</li>
+                        <li><strong>Minifier et compresser :</strong> Minifier les fichiers CSS et JavaScript et activer la compression (Gzip, Brotli) sur le serveur.</li>
+                        <li><strong>Optimiser le chemin de rendu critique :</strong> Charger en priorité le CSS nécessaire à l'affichage de la partie visible de la page.</li>
+                        <li><strong>Utiliser le "lazy loading" :</strong> Ne charger les images et vidéos que lorsqu'elles deviennent visibles à l'écran.</li>
+                        <li><strong>Écrire un code JS efficient :</strong> Éviter les calculs complexes dans les boucles et limiter les manipulations du DOM.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Axe 1 : Optimiser le code Front-End</h2>
-            <h3>Le constat :</h3>
-            <p>Un code Front-End lourd et non optimisé ralentit l'affichage, augmente la consommation de batterie et rend le service inutilisable sur des terminaux anciens ou des connexions faibles.</p>
-            <h3>L'objectif :</h3>
-            <p>Envoyer au navigateur le strict minimum de code (HTML, CSS, JS) et s'assurer qu'il est exécuté de la manière la plus efficace possible.</p>
-            <h3>Comment faire ?</h3>
-            <ul>
-                <li><strong>Limiter les dépendances :</strong> Questionner la nécessité de chaque librairie ou framework. Un framework lourd est-il justifié pour un site simple ?</li>
-                <li><strong>Minifier et compresser :</strong> Minifier les fichiers CSS et JavaScript et activer la compression (Gzip, Brotli) sur le serveur.</li>
-                <li><strong>Optimiser le chemin de rendu critique :</strong> Charger en priorité le CSS nécessaire à l'affichage de la partie visible de la page ("above the fold").</li>
-                <li><strong>Utiliser le "lazy loading" :</strong> Ne charger les images, iframes et vidéos que lorsqu'elles deviennent visibles à l'écran.</li>
-                <li><strong>Écrire un code JS efficient :</strong> Éviter les calculs complexes dans les boucles, limiter les manipulations du DOM.</li>
-            </ul>
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="axe2" class="practice-section" aria-labelledby="axe2-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">⚙️</span>
+                    <h2 id="axe2-title">Axe 2 : Optimiser le code Back-End</h2>
+                </div>
+                <div class="practice-intro">
+                    <p><strong>Le constat :</strong> Le code Back-End est responsable de la consommation des serveurs. Des requêtes BDD non optimisées et des traitements inutiles surchargent l'infrastructure.</p>
+                    <p><strong>L'objectif :</strong> Minimiser le temps de calcul et les ressources serveur pour chaque requête utilisateur.</p>
+                </div>
+                 <div class="practice-how-to">
+                    <h3>Comment faire ?</h3>
+                    <ul>
+                        <li><strong>Optimiser les requêtes BDD :</strong> Sélectionner uniquement les champs nécessaires (pas de `SELECT *`) et utiliser des index.</li>
+                        <li><strong>Mettre en place une stratégie de cache :</strong> Mettre en cache les résultats des requêtes fréquentes pour ne pas les recalculer à chaque fois.</li>
+                        <li><strong>Choisir le bon langage/framework :</strong> Certains langages sont nativement plus performants et moins consommateurs que d'autres.</li>
+                        <li><strong>Adopter l'asynchrone :</strong> Pour les tâches longues (envoi d'email, traitement de fichiers), utiliser des files d'attente pour ne pas bloquer la réponse à l'utilisateur.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Axe 2 : Optimiser le code Back-End</h2>
-            <h3>Le constat :</h3>
-            <p>Le code Back-End est responsable de la consommation des serveurs. Des requêtes BDD non optimisées, des algorithmes complexes et des traitements inutiles surchargent l'infrastructure.</p>
-            <h3>L'objectif :</h3>
-            <p>Minimiser le temps de calcul et les ressources serveur pour chaque requête utilisateur.</p>
-            <h3>Comment faire ?</h3>
-            <ul>
-                <li><strong>Optimiser les requêtes à la base de données :</strong> Sélectionner uniquement les champs nécessaires (pas de `SELECT *`), utiliser des index, éviter les requêtes N+1.</li>
-                <li><strong>Mettre en place une stratégie de cache :</strong> Mettre en cache les résultats des requêtes fréquentes pour ne pas les recalculer à chaque fois (cache applicatif, cache de base de données).</li>
-                <li><strong>Choisir le bon langage/framework :</strong> Pour des traitements intensifs, certains langages sont nativement plus performants et moins consommateurs que d'autres.</li>
-                <li><strong>Adopter l'asynchrone :</strong> Pour les tâches longues (envoi d'email, traitement de fichiers), utiliser des files d'attente (message queues) pour ne pas bloquer la réponse à l'utilisateur.</li>
-            </ul>
-        </section>
-
-        <section class="references">
-            <h3>Sources</h3>
-            <ul>
-                <li>Référentiel Général d'Écoconception de Services Numériques (RGESN)</li>
-                <li>GreenIT-Analysis (outil d'analyse et de bonnes pratiques)</li>
-            </ul>
-        </section>
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
