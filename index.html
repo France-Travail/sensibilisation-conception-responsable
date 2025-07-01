@@ -3,89 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sensibilisation à la Conception Responsable de Service Numérique</title>
+    <meta name="description" content="Guide pratique pour la conception responsable de services numériques - Réduire l'impact environnemental et sociétal du numérique">
+    <meta name="keywords" content="écoconception, numérique responsable, développement durable, impact environnemental">
+    <meta name="author" content="France Travail">
+    <title>Conception Responsable de Services Numériques - Guide pratique</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Conception Responsable de Service Numérique</h1>
-            <ul class="nav-links">
-                <li><a href="impacts/impacts.html">Impacts</a></li>
-                <li><a href="principes/definition.html">Principes</a></li>
-                <li><a href="bonnes-pratiques/strategie-pilotage.html">Bonnes Pratiques</a></li>
-                <li><a href="mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <!-- Lien d'évitement pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Navigation principale -->
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <!-- Menu de navigation -->
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="principes/definition.html">Définition</a></li>
+                            <li><a href="principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="gradient-text">Sensibilisation à la Conception Responsable de Service Numérique</h2>
-            <p>Découvrez comment concevoir des services numériques plus respectueux de l'environnement et de la société</p>
-        </div>
-    </section>
+    <!-- Contenu principal -->
+    <main id="main-content">
+        <!-- Section Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Sensibilisation à la Conception Responsable de Services Numériques</h1>
+                <p class="hero-subtitle">Découvrez comment concevoir des services numériques plus respectueux de l'environnement et de la société</p>
+                <a href="#objectives" class="cta-button">Commencer la sensibilisation</a>
+            </div>
+        </section>
 
-    <section class="objectives">
-        <div class="container">
-            <h2>Objectifs de cette présentation</h2>
-            <p class="objectives-intro">À l'issue de cette sensibilisation, vous serez capable de</p>
-            
-            <div class="objectives-grid">
-                <a href="impacts/impacts.html" class="objective-card">
-                    <h3>Résumer les impacts du numérique</h3>
-                </a>
+        <!-- Section Objectifs -->
+        <section id="objectives" class="objectives" aria-labelledby="objectives-title">
+            <div class="container">
+                <h2 id="objectives-title">Objectifs de cette présentation</h2>
+                <p class="objectives-intro">À l'issue de cette sensibilisation, vous serez capable de :</p>
                 
-                <a href="principes/definition.html" class="objective-card">
-                    <h3>Expliquer le principe d'écoconception</h3>
-                </a>
+                <div class="objectives-grid">
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🌍</div>
+                        <h3>Résumer les impacts du numérique</h3>
+                        <p>Comprendre l'empreinte environnementale et sociétale du numérique sur notre planète</p>
+                        <a href="impacts/empreinte-environnementale.html" class="card-link">
+                            Découvrir
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">💡</div>
+                        <h3>Expliquer le principe d'écoconception</h3>
+                        <p>Maîtriser les fondamentaux de la conception responsable de services numériques</p>
+                        <a href="principes/definition.html" class="card-link">
+                            Explorer
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🛠️</div>
+                        <h3>Appliquer les bonnes pratiques</h3>
+                        <p>Connaître les principes d'écoconception et les bonnes pratiques selon votre rôle dans l'équipe</p>
+                        <a href="bonnes-pratiques/strategie-pilotage.html" class="card-link">
+                            Apprendre
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🚀</div>
+                        <h3>Lancer une démarche d'écoconception</h3>
+                        <p>Comprendre comment initier et piloter une démarche de conception responsable</p>
+                        <a href="mise-en-oeuvre/lancer-demarche.html" class="card-link">
+                            Démarrer
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Navigation détaillée -->
+        <section class="navigation-section" aria-labelledby="nav-section-title">
+            <div class="container">
+                <h2 id="nav-section-title">Explorer les sections en détail</h2>
                 
-                <a href="bonnes-pratiques/strategie-pilotage.html" class="objective-card">
-                    <h3>Connaître les principes d'écoconception et quelques bonnes pratiques associées en fonction des rôles au sein de l'équipe produit</h3>
-                </a>
-                
-                <a href="mise-en-oeuvre/lancer-demarche.html" class="objective-card">
-                    <h3>Connaître la démarche d'écoconception et les outils associés</h3>
+                <div class="nav-grid">
+                    <article class="nav-card">
+                        <span class="icon" aria-hidden="true">🌍</span>
+                        <h3>Les Impacts du Numérique</h3>
+                        <p>Découvrez l'empreinte environnementale et sociétale du numérique, les inégalités d'accès et d'usage.</p>
+                        <nav aria-label="Navigation impacts">
+                            <ul class="nav-card-links">
+                                <li><a href="impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                                <li><a href="impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                    
+                    <article class="nav-card">
+                        <span class="icon" aria-hidden="true">💡</span>
+                        <h3>Principes de l'Écoconception</h3>
+                        <p>Comprenez les fondements de l'écoconception : simplicité, frugalité, pertinence et durabilité.</p>
+                        <nav aria-label="Navigation principes">
+                            <ul class="nav-card-links">
+                                <li><a href="principes/definition.html">Définition et concepts</a></li>
+                                <li><a href="principes/benefices.html">Bénéfices de la démarche</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                    
+                    <article class="nav-card">
+                        <span class="icon" aria-hidden="true">🛠️</span>
+                        <h3>Bonnes Pratiques par Métier</h3>
+                        <p>Explorez les bonnes pratiques adaptées à chaque rôle dans l'équipe produit.</p>
+                        <nav aria-label="Navigation bonnes pratiques">
+                            <ul class="nav-card-links">
+                                <li><a href="bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                                <li><a href="bonnes-pratiques/ux.html">UX Design</a></li>
+                                <li><a href="bonnes-pratiques/ui.html">UI Design</a></li>
+                                <li><a href="bonnes-pratiques/developpement.html">Développement</a></li>
+                                <li><a href="bonnes-pratiques/architecture.html">Architecture</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                    
+                    <article class="nav-card">
+                        <span class="icon" aria-hidden="true">🚀</span>
+                        <h3>Mettre en Œuvre la Démarche</h3>
+                        <p>Apprenez à lancer une démarche d'écoconception et découvrez les outils disponibles.</p>
+                        <nav aria-label="Navigation mise en œuvre">
+                            <ul class="nav-card-links">
+                                <li><a href="mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                                <li><a href="mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section statistiques -->
+        <section class="stats-section" aria-labelledby="stats-title">
+            <div class="container">
+                <h2 id="stats-title" class="visually-hidden">Chiffres clés du numérique responsable</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4<span class="stat-unit">%</span></div>
+                        <p class="stat-label">des émissions mondiales de <abbr title="Gaz à Effet de Serre">GES</abbr> dues au numérique</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10<span class="stat-unit">%</span></div>
+                        <p class="stat-label">de la consommation électrique mondiale</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50<span class="stat-unit">%</span></div>
+                        <p class="stat-label">de réduction possible avec l'écoconception</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section appel à l'action -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Prêt à agir pour un numérique plus responsable ?</h2>
+                    <p>Rejoignez le mouvement de la conception responsable et contribuez à réduire l'impact environnemental du numérique.</p>
+                    <div class="cta-buttons">
+                        <a href="mise-en-oeuvre/lancer-demarche.html" class="btn-primary">Commencer maintenant</a>
+                        <a href="mise-en-oeuvre/outils-ressources.html" class="btn-secondary">Découvrir les outils</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
                 </a>
             </div>
-        </div>
-    </section>
-
-    <section class="navigation-section">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; color: var(--primary-color);">Explorer les sections</h2>
-            
-            <div class="nav-grid">
-                <a href="impacts/impacts.html" class="nav-card">
-                    <span class="icon">🌍</span>
-                    <h3>Les Impacts du Numérique</h3>
-                    <p>Découvrez l'empreinte environnementale et sociétale du numérique, les inégalités d'accès et d'usage.</p>
-                </a>
-                
-                <a href="principes/definition.html" class="nav-card">
-                    <span class="icon">💡</span>
-                    <h3>Principes de l'Écoconception</h3>
-                    <p>Comprenez les fondements de l'écoconception : simplicité, frugalité, pertinence et durabilité.</p>
-                </a>
-                
-                <a href="bonnes-pratiques/strategie-pilotage.html" class="nav-card">
-                    <span class="icon">🛠️</span>
-                    <h3>Bonnes Pratiques par Métier</h3>
-                    <p>Explorez les bonnes pratiques adaptées à chaque rôle : stratégie, UX, UI, développement et architecture.</p>
-                </a>
-                
-                <a href="mise-en-oeuvre/lancer-demarche.html" class="nav-card">
-                    <span class="icon">🚀</span>
-                    <h3>Mettre en Œuvre la Démarche</h3>
-                    <p>Apprenez à lancer une démarche d'écoconception et découvrez les outils et ressources disponibles.</p>
-                </a>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
