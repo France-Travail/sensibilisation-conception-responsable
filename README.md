@@ -32,7 +32,6 @@ Aucune installation complexe n'est requise. Le site est entièrement statique (H
 3.  Ouvrez le fichier `index.html` directement dans votre navigateur web.
 
 ---
-https://github.com/France-Travail/sensibilisation-conception-responsable/blob/main/README.md
 ## 📂 Structure du projet
 
 Le projet suit une arborescence de fichiers simple et logique pour faciliter la navigation et les contributions.
