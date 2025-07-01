@@ -3,165 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empreinte Sociétale du Numérique - Conception Responsable</title>
+    <meta name="description" content="Comprendre l'empreinte sociétale du numérique : fracture matérielle, illectronisme, accessibilité et obsolescence logicielle.">
+    <meta name="keywords" content="écoconception, impact sociétal, fracture numérique, illectronisme, accessibilité, obsolescence">
+    <meta name="author" content="France Travail">
+    <title>Empreinte Sociétale - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="impacts.html" class="active">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="../bonnes-pratiques/strategie-pilotage.html">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="../bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="../bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="../bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="../bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="../bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> > <a href="impacts.html">Les Impacts du Numérique</a> > Empreinte Sociétale
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>L'UNIVERS NUMÉRIQUE - Une empreinte sociétale à considérer</h1>
-            <p class="lead">Au-delà de l'impact environnemental, le numérique génère des inégalités sociales profondes qui touchent l'accès et l'usage des technologies</p>
-        </section>
-
-        <section class="inequality-overview">
-            <div class="inequality-visual">
-                <span class="inequality-icon">🌐</span>
-                <span class="inequality-text">Inégalité d'accès</span>
-                <span class="inequality-operator">et / ou</span>
-                <span class="inequality-icon">👤</span>
-                <span class="inequality-text">Inégalité d'usage</span>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">L'Empreinte Sociétale du Numérique</h1>
+                <p class="hero-subtitle">Au-delà de l'impact environnemental, le numérique génère des inégalités sociales profondes qui touchent l'accès et l'usage des technologies.</p>
             </div>
         </section>
 
-        <section class="inequality-grid">
-            <div class="inequality-card">
-                <div class="inequality-card-content">
-                    <h3 class="inequality-type">FRACTURE MATÉRIELLE</h3>
-                    <p class="inequality-description">Inégalités dans l'accès aux matériels informatiques</p>
-                    <div class="inequality-stat">
-                        <span class="stat-number">13M</span>
-                        <p class="stat-detail">de personnes sont éloignées du numérique parmi la population française</p>
-                    </div>
-                </div>
-                <div class="inequality-card-image">
-                    <span style="font-size: 4rem;">💻</span>
-                </div>
-            </div>
-
-            <div class="inequality-card">
-                <div class="inequality-card-content">
-                    <h3 class="inequality-type">ILLECTRONISME</h3>
-                    <p class="inequality-description">Incapacité à utiliser les appareils numériques et les outils informatiques</p>
-                    <div class="inequality-stat">
-                        <span class="stat-number">15%</span>
-                        <p class="stat-detail">des adultes français seraient incapables de réaliser les démarches administratives en ligne</p>
-                    </div>
-                </div>
-                <div class="inequality-card-image">
-                    <span style="font-size: 4rem;">👨‍👩‍👧</span>
-                </div>
-            </div>
-
-            <div class="inequality-card">
-                <div class="inequality-card-content">
-                    <h3 class="inequality-type">ACCESSIBILITÉ NUMÉRIQUE</h3>
-                    <p class="inequality-description">Accès aux contenus et services web par les personnes en situation de handicap</p>
-                    <div class="inequality-stat">
-                        <span class="stat-number">4%</span>
-                        <p class="stat-detail">des sites publics français ont publié leur attestation de conformité au RGAA</p>
-                    </div>
-                </div>
-                <div class="inequality-card-image">
-                    <span style="font-size: 4rem;">♿</span>
+        <section id="fractures" class="objectives section-bg-alt" aria-labelledby="fractures-title">
+            <div class="container">
+                <h2 id="fractures-title">Les différentes formes de la fracture numérique</h2>
+                <div class="objectives-grid">
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">💻</div>
+                        <h3>Fracture Matérielle</h3>
+                        <p>Inégalités dans l'accès aux matériels informatiques. <strong>13 millions de personnes</strong> sont éloignées du numérique en France.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🧠</div>
+                        <h3>Illectronisme</h3>
+                        <p>Incapacité à utiliser les outils numériques. <strong>15% des adultes français</strong> ne peuvent réaliser les démarches en ligne.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">♿</div>
+                        <h3>Accessibilité Numérique</h3>
+                        <p>Difficultés d'accès aux contenus pour les personnes en situation de handicap. Seulement <strong>4% des sites publics</strong> sont conformes.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="obsolescence-section">
-            <h2>Les logiciels induisent un renouvellement prématuré des terminaux utilisateur</h2>
-            
-            <div class="obsolescence-intro">
-                L'obsolescence logicielle correspond à la diminution des possibilités d'usage d'un appareil numérique (smartphone, tablette, ordinateur, etc.) en raison de l'indisponibilité ou du dysfonctionnement d'un logiciel.
-            </div>
+        <div class="section-spacer" style="height: 4rem;"></div>
 
-            <div class="trends-container">
-                <h3 class="trends-title">3 tendances du marché favorisant l'obsolescence logicielle :</h3>
-                
-                <div class="trends-grid">
-                    <div class="trend-card">
-                        <div class="trend-icon">➕</div>
-                        <h4 class="trend-title">Multiplication d'usages superflus</h4>
-                        <div class="trend-stat">70%</div>
-                        <p class="trend-description">des fonctionnalités proposées aux utilisateurs ne sont jamais ou rarement utilisées</p>
-                    </div>
-
-                    <div class="trend-card">
-                        <div class="trend-icon">⚡</div>
-                        <h4 class="trend-title">Une conception de plus en plus énergivore</h4>
-                        <div class="trend-stat">+ 115%</div>
-                        <p class="trend-description">d'augmentation du poids moyen d'une page web en 20 ans</p>
-                    </div>
-
-                    <div class="trend-card">
-                        <div class="trend-icon">🔄</div>
-                        <h4 class="trend-title">Les anciens appareils laissés pour compte</h4>
-                        <div class="trend-stat">Au-delà de 5 ans</div>
-                        <p class="trend-description">un terminal a peu de chances d'avoir des mises à jour sécurité</p>
-                    </div>
-                </div>
-
-                <div class="impact-arrow">➤</div>
-                <div class="impact-result">
-                    IMPACT SUR LES TERMINAUX
-                    <span style="font-size: 2rem; margin-left: 1rem;">⚠️💻</span>
+        <section id="obsolescence" class="objectives" aria-labelledby="obsolescence-title">
+            <div class="container">
+                <h2 id="obsolescence-title">L'obsolescence logicielle : un accélérateur d'impacts</h2>
+                <p class="objectives-intro">L'obsolescence logicielle diminue les possibilités d'usage d'un appareil, non pas parce qu'il est cassé, mais parce que les logiciels ne sont plus compatibles.</p>
+                <h3 style="text-align: center; margin-top: 2rem;">3 tendances du marché qui favorisent cette obsolescence :</h3>
+                <div class="objectives-grid">
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">➕</div>
+                        <h3>Multiplication d'usages superflus</h3>
+                        <p><strong>70% des fonctionnalités</strong> proposées ne sont jamais ou rarement utilisées par les utilisateurs.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">⚡</div>
+                        <h3>Une conception de plus en plus énergivore</h3>
+                        <p>Le poids moyen d'une page web a été <strong>multiplié par 115</strong> en 20 ans, demandant des appareils toujours plus puissants.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🔄</div>
+                        <h3>Les anciens appareils laissés pour compte</h3>
+                        <p>Un terminal de <strong>plus de 5 ans</strong> a peu de chances de recevoir des mises à jour de sécurité.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="conclusion-section">
-            <h2>L'écoconception : une réponse aux enjeux sociétaux</h2>
-            
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                L'écoconception permet d'agir directement contre l'obsolescence matérielle et de favoriser l'inclusion numérique.
-            </p>
+         <div class="section-spacer" style="height: 4rem;"></div>
 
-            <div class="quote-box">
-                <p class="quote-text">
-                    Les services numériques éco-conçus fonctionnent sur des appareils anciens, repoussant ainsi leur obsolescence et leur renouvellement. L'obsolescence se traduit entre autres par le fait que l'utilisateur qui fait l'expérience d'un terminal qui rame, aura tendance à renouveler son appareil pour pallier cette lenteur induite.
-                </p>
-                <p class="quote-source">
-                    — Guide d'éco-conception, Labo Société Numérique
-                </p>
+        <section id="conclusion" class="practice-section section-bg-alt" aria-labelledby="conclusion-title">
+            <div class="container">
+                <div class="practice-header">
+                     <h2 id="conclusion-title">L'écoconception : une réponse aux enjeux sociétaux</h2>
+                </div>
+                <div class="practice-intro">
+                    <blockquote>
+                        "Les services numériques éco-conçus fonctionnent sur des appareils anciens, repoussant ainsi leur obsolescence et leur renouvellement. L'obsolescence se traduit entre autres par le fait que l'utilisateur qui fait l'expérience d'un terminal qui rame, aura tendance à renouveler son appareil pour pallier cette lenteur induite."
+                        <cite>– Guide d'éco-conception, Labo Société Numérique</cite>
+                    </blockquote>
+                </div>
             </div>
         </section>
 
-        <section class="references">
-            <h3>Sources</h3>
-            <ul>
-                <li><a href="https://httparchive.org/?lens=top10k" target="_blank">HTTP Archive - Analyse des performances web</a></li>
-                <li><a href="https://presse.ademe.fr/2014/07/etude-web-energy-archive-la-consommation-energetique-des-sites-web-cote-utilisateur.html" target="_blank">ADEME Presse - Étude Web Energy Archive : la consommation énergétique des sites web, côté utilisateur</a></li>
-                <li><a href="https://www.ecologie.gouv.fr/sites/default/files/Obsolescence%20logicielle.pdf" target="_blank">Obsolescence logicielle - Ministère de la Transition écologique</a></li>
-                <li><a href="https://www.cigref.fr/wp/wp-content/uploads/2021/10/Cigref-Obsolescence-logicielle-et-materielle-Recommandations-aux-organisations-utilisatrices-Octobre-2021.pdf" target="_blank">Cigref - Obsolescence logicielle et matérielle : Recommandations aux organisations utilisatrices</a></li>
-                <li><a href="https://www.vie-publique.fr/sites/default/files/rapport/pdf/280293.pdf" target="_blank">Rapport sur l'obsolescence logicielle - Vie publique</a></li>
-                <li><a href="https://labo.societenumerique.gouv.fr/2021/03/17/un-guide-deco-conception-pour-reduire-lempreinte-environnementale-des-services-numeriques/" target="_blank">Labo Société Numérique - Guide d'éco-conception pour réduire l'empreinte environnementale des services numériques</a></li>
-            </ul>
-        </section>
+
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
-        
-        <div class="license">
-            <p><strong>Licence MIT</strong></p>
-            <p>Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.</p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
         </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

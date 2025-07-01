@@ -3,124 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez l'empreinte environnementale et sociétale du numérique et comprenez pourquoi la conception responsable est essentielle.">
+    <meta name="keywords" content="écoconception, impact environnemental, impact sociétal, numérique responsable, Green IT">
+    <meta name="author" content="France Travail">
     <title>Les Impacts du Numérique - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="impacts.html" class="active">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="../bonnes-pratiques/strategie-pilotage.html">Bonnes Pratiques</a></li>
-                <li><a href="../mise-en-oeuvre/lancer-demarche.html">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="../bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="../bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="../bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="../bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="../bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="../mise-en-oeuvre/lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> > Les Impacts du Numérique
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Les Impacts du Numérique</h1>
-            <p>Le numérique n'est pas immatériel : découvrez son empreinte environnementale et sociétale</p>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Les Impacts du Numérique</h1>
+                <p class="hero-subtitle">Contrairement à l'idée reçue, le numérique n'est pas immatériel. Découvrez son empreinte environnementale et sociétale.</p>
+            </div>
         </section>
 
-        <section class="introduction">
-            <h2>Une double empreinte à considérer</h2>
-            <p>Contrairement à l'idée reçue d'un numérique "dématérialisé", l'univers digital repose sur une infrastructure physique massive qui génère des impacts significatifs sur notre environnement et notre société. Comprendre ces impacts est la première étape vers une conception plus responsable.</p>
-        </section>
-
-        <section class="impact-grid">
-            <a href="empreinte-environnementale.html" class="impact-card">
-                <div class="impact-card-header">
-                    <h3><span class="icon">🌍</span> Empreinte Environnementale</h3>
-                </div>
-                <div class="impact-card-content">
-                    <div class="impact-preview">
-                        <h4>Une matérialité méconnue</h4>
-                        <p>Le numérique représente une part croissante de notre empreinte écologique mondiale, avec des impacts sur les ressources, l'énergie et le climat.</p>
-                    </div>
+        <section class="navigation-section" aria-labelledby="nav-section-title">
+            <div class="container">
+                <h2 id="nav-section-title" class="visually-hidden">Explorer les impacts</h2>
+                <div class="nav-grid">
+                    <article class="nav-card">
+                        <a href="empreinte-environnementale.html" class="card-link-wrapper">
+                            <span class="icon" aria-hidden="true">🌍</span>
+                            <h3>Empreinte Environnementale</h3>
+                            <p>Le numérique représente une part croissante de notre empreinte écologique mondiale, avec des impacts sur les ressources, l'énergie et le climat.</p>
+                            <div class="stats-grid compact">
+                                <div class="stat-card">
+                                    <div class="stat-number">3.8%</div>
+                                    <p class="stat-label">des émissions de GES mondiales</p>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">5.5%</div>
+                                    <p class="stat-label">de la consommation électrique</p>
+                                </div>
+                            </div>
+                            <span class="cta-link">Découvrir l'empreinte environnementale <span aria-hidden="true">→</span></span>
+                        </a>
+                    </article>
                     
-                    <div class="stat-grid">
-                        <div class="stat-item">
-                            <span class="stat-value">3,8%</span>
-                            <span class="stat-label">des émissions de GES mondiales</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">5,5%</span>
-                            <span class="stat-label">de la consommation électrique</span>
-                        </div>
-                    </div>
-
-                    <div class="impact-preview" style="margin-top: 1.5rem;">
-                        <p><strong>Points clés :</strong> Infrastructures surdimensionnées, obsolescence logicielle, consommation de ressources minérales...</p>
-                    </div>
-
-                    <span class="cta-link">Découvrir l'empreinte environnementale</span>
-                </div>
-            </a>
-
-            <a href="empreinte-societale.html" class="impact-card">
-                <div class="impact-card-header">
-                    <h3><span class="icon">👥</span> Empreinte Sociétale</h3>
-                </div>
-                <div class="impact-card-content">
-                    <div class="impact-preview">
-                        <h4>Des inégalités numériques persistantes</h4>
-                        <p>Au-delà de l'environnement, le numérique crée et amplifie des fractures sociales qu'il est essentiel de prendre en compte.</p>
-                    </div>
-                    
-                    <div class="stat-grid">
-                        <div class="stat-item">
-                            <span class="stat-value">13M</span>
-                            <span class="stat-label">de personnes éloignées du numérique en France</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">4%</span>
-                            <span class="stat-label">des sites publics accessibles</span>
-                        </div>
-                    </div>
-
-                    <div class="impact-preview" style="margin-top: 1.5rem;">
-                        <p><strong>Points clés :</strong> Fracture matérielle, illectronisme, accessibilité numérique...</p>
-                    </div>
-
-                    <span class="cta-link">Explorer l'empreinte sociétale</span>
-                </div>
-            </a>
-        </section>
-
-        <section class="key-points">
-            <h2>Pourquoi s'intéresser aux impacts du numérique ?</h2>
-            <div class="key-points-grid">
-                <div class="key-point">
-                    <h3>📈 Une croissance exponentielle</h3>
-                    <p>Les émissions du numérique augmentent de 8% par an, doublant tous les 9 ans environ.</p>
-                </div>
-                <div class="key-point">
-                    <h3>💡 Des solutions existent</h3>
-                    <p>L'écoconception permet de réduire significativement ces impacts tout en améliorant l'expérience utilisateur.</p>
-                </div>
-                <div class="key-point">
-                    <h3>🤝 Une responsabilité collective</h3>
-                    <p>Chaque acteur du numérique peut agir à son niveau pour un digital plus durable et inclusif.</p>
+                    <article class="nav-card">
+                         <a href="empreinte-societale.html" class="card-link-wrapper">
+                            <span class="icon" aria-hidden="true">👥</span>
+                            <h3>Empreinte Sociétale</h3>
+                            <p>Au-delà de l'environnement, le numérique crée et amplifie des fractures sociales qu'il est essentiel de prendre en compte.</p>
+                             <div class="stats-grid compact">
+                                <div class="stat-card">
+                                    <div class="stat-number">13M</div>
+                                    <p class="stat-label">de personnes éloignées du numérique en France</p>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">4%</div>
+                                    <p class="stat-label">des sites publics accessibles</p>
+                                </div>
+                            </div>
+                            <span class="cta-link">Explorer l'empreinte sociétale <span aria-hidden="true">→</span></span>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="why-act" class="objectives section-bg-alt" aria-labelledby="why-act-title">
+            <div class="container">
+                <h2 id="why-act-title">Pourquoi s'intéresser aux impacts du numérique ?</h2>
+                <div class="objectives-grid">
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">📈</div>
+                        <h3>Une croissance exponentielle</h3>
+                        <p>Les émissions du numérique augmentent de 8% par an, doublant tous les 9 ans environ.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">💡</div>
+                        <h3>Des solutions existent</h3>
+                        <p>L'écoconception permet de réduire significativement ces impacts tout en améliorant l'expérience utilisateur.</p>
+                    </article>
+                    
+                    <article class="objective-card">
+                        <div class="card-icon" aria-hidden="true">🤝</div>
+                        <h3>Une responsabilité collective</h3>
+                        <p>Chaque acteur du numérique peut agir à son niveau pour un digital plus durable et inclusif.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
-        
-        <div class="license">
-            <p><strong>Licence MIT</strong></p>
-            <p>Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.</p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="../mise-en-oeuvre/outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
         </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
