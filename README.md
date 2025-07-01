@@ -124,4 +124,4 @@ N'hésitez pas à ouvrir une *issue* au préalable pour discuter des changements
 
 ## 📜 Licence
 
-Ce projet est distribué sous la **Licence MIT**. Consultez le fichier `LICENSE` (à ajouter) pour plus d'informations.
+Ce projet est distribué sous la **Licence MIT**. Consultez le fichier `LICENSE` pour plus d'informations.
