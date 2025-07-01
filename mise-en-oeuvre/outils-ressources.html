@@ -1,72 +1,182 @@
+Avec plaisir. J'ai mis à jour la page `outils-ressources.html` en transformant chaque ressource en lien cliquable, comme vous l'avez demandé.
+
+Chaque lien s'ouvrira dans un nouvel onglet pour une meilleure expérience de navigation.
+
+### Page `outils-ressources.html` avec les liens intégrés
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une sélection d'outils, de référentiels et de communautés pour vous accompagner dans votre démarche d'écoconception.">
+    <meta name="keywords" content="écoconception, outils, ressources, Green IT, EcoIndex, RGESN">
+    <meta name="author" content="France Travail">
     <title>Outils & Ressources - Conception Responsable</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-            <ul class="nav-links">
-                <li><a href="../impacts/impacts.html">Impacts</a></li>
-                <li><a href="../principes/definition.html">Principes</a></li>
-                <li><a href="../bonnes-pratiques/index.html">Bonnes Pratiques</a></li>
-                <li><a href="index.html" class="active">Mise en Œuvre</a></li>
-            </ul>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="../bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="../bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="../bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="../bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="../bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="breadcrumb">
-        <a href="../index.html">Accueil</a> &gt; 
-        <a href="index.html">Mise en Œuvre</a> &gt; 
-        Outils & Ressources
-    </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Outils & Ressources pour l'Écoconception</h1>
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Outils & Ressources pour l'Écoconception</h1>
+                <p class="hero-subtitle">Mettre en place une démarche d'écoconception s'appuie sur des outils de mesure, des référentiels et des communautés.</p>
+            </div>
         </section>
 
-        <section>
-            <p>Mettre en place une démarche d'écoconception s'appuie sur des outils de mesure, des référentiels et des communautés. Voici une sélection de ressources pour vous aider.</p>
+        <section id="tools" class="practice-section section-bg-alt" aria-labelledby="tools-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🛠️</span>
+                    <h2 id="tools-title">Outils de mesure et d'analyse</h2>
+                </div>
+                <div class="practice-how-to">
+                    <ul>
+                        <li><a href="https://www.ecoindex.fr/" target="_blank" rel="noopener noreferrer"><strong>EcoIndex</strong></a> : Un service en ligne et une extension qui évaluent la performance environnementale d'une page web.</li>
+                        <li><a href="https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad?hl=fr" target="_blank" rel="noopener noreferrer"><strong>GreenIT-Analysis</strong></a> : Une extension qui analyse une page et fournit une liste détaillée de bonnes pratiques non respectées.</li>
+                        <li><a href="https://developer.chrome.com/docs/lighthouse/?hl=fr" target="_blank" rel="noopener noreferrer"><strong>Lighthouse</strong></a> : Un outil (intégré à Chrome) pour auditer la performance, l'accessibilité et les bonnes pratiques.</li>
+                        <li><a href="https://www.webpagetest.org/" target="_blank" rel="noopener noreferrer"><strong>WebPageTest</strong></a> : Un outil avancé pour analyser en profondeur la performance de chargement d'un site.</li>
+                        <li><a href="https://squoosh.app/" target="_blank" rel="noopener noreferrer"><strong>Squoosh</strong></a> : Un outil en ligne puissant pour compresser et convertir des images dans des formats modernes.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Outils de mesure et d'analyse</h2>
-            <ul>
-                <li><strong>EcoIndex :</strong> Un service en ligne et une extension de navigateur qui évaluent la performance environnementale d'une page web en lui attribuant une note de A à G et une estimation de son empreinte (GES, eau).</li>
-                <li><strong>GreenIT-Analysis :</strong> Une extension de navigateur (basée sur l'EcoIndex) qui analyse une page et fournit une liste détaillée de bonnes pratiques non respectées.</li>
-                <li><strong>Lighthouse (dans les outils de développement de Chrome) :</strong> Permet de réaliser un audit de performance, d'accessibilité, de bonnes pratiques et de SEO. Une bonne performance est souvent corrélée à une meilleure sobriété.</li>
-                <li><strong>WebPageTest :</strong> Un outil avancé pour analyser en profondeur la performance de chargement d'un site web depuis différentes localisations et sur différents navigateurs.</li>
-                <li><strong>Squoosh :</strong> Un outil en ligne puissant pour compresser et convertir des images dans des formats modernes (WebP, AVIF).</li>
-            </ul>
-        </section>
+        <div class="section-spacer" style="height: 4rem;"></div>
 
-        <section>
-            <h2>Référentiels et guides</h2>
-            <ul>
-                <li><strong>Référentiel Général d'Écoconception de Services Numériques (RGESN) :</strong> Un guide complet publié par la Direction interministérielle du numérique (DINUM) en France, qui propose 80 critères pour éco-concevoir un service numérique.</li>
-                <li><strong>Guide de référence de l'écoconception web (Opidum) :</strong> Un ensemble de 115 bonnes pratiques pour la conception de services numériques responsables.</li>
-                <li><strong>Le livre "Écoconception web : les 100 bonnes pratiques" :</strong> Un ouvrage de référence de Frédéric Bordage qui explore en détail les leviers d'action.</li>
-            </ul>
+        <section id="guides" class="practice-section" aria-labelledby="guides-title">
+            <div class="container">
+                 <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">📚</span>
+                    <h2 id="guides-title">Référentiels et guides</h2>
+                </div>
+                 <div class="practice-how-to">
+                    <ul>
+                        <li><a href="https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/" target="_blank" rel="noopener noreferrer"><strong>Référentiel Général d'Écoconception de Services Numériques (RGESN)</strong></a> : Un guide complet de la DINUM proposant 80 critères.</li>
+                        <li><a href="https://collectif.greenit.fr/ecoconception-web/" target="_blank" rel="noopener noreferrer"><strong>Guide de référence de l'écoconception web</strong></a> : Un ensemble de 115 bonnes pratiques du Collectif Green IT.</li>
+                        <li><a href="https://www.eyrolles.com/Informatique/Livre/ecoconception-web-les-100-bonnes-pratiques-9782212675952/" target="_blank" rel="noopener noreferrer"><strong>Le livre "Écoconception web : les 100 bonnes pratiques"</strong></a> : Un ouvrage de référence de Frédéric Bordage.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
-        <section>
-            <h2>Communautés et collectifs</h2>
-            <ul>
-                <li><strong>Institut du Numérique Responsable (INR) :</strong> Une association qui promeut les bonnes pratiques du numérique responsable à travers des publications, des formations et des labels.</li>
-                <li><strong>Collectif Conception Numérique Responsable :</strong> Un groupe d'experts qui publie des ressources et organise des événements sur le sujet.</li>
-                <li><strong>The Shift Project :</strong> Un think tank qui œuvre en faveur d’une économie décarbonée et a publié des rapports influents sur l'impact du numérique.</li>
-            </ul>
+        <div class="section-spacer" style="height: 4rem;"></div>
+        
+        <section id="communities" class="practice-section section-bg-alt" aria-labelledby="communities-title">
+            <div class="container">
+                 <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🤝</span>
+                    <h2 id="communities-title">Communautés et collectifs</h2>
+                </div>
+                <div class="practice-how-to">
+                    <ul>
+                        <li><a href="https://institutnr.org/" target="_blank" rel="noopener noreferrer"><strong>Institut du Numérique Responsable (INR)</strong></a> : Une association qui promeut les bonnes pratiques du numérique responsable.</li>
+                        <li><a href="https://collectif.greenit.fr/" target="_blank" rel="noopener noreferrer"><strong>Collectif Conception Numérique Responsable</strong></a> : Un groupe d'experts qui publie des ressources et organise des événements.</li>
+                        <li><a href="https://theshiftproject.org/" target="_blank" rel="noopener noreferrer"><strong>The Shift Project</strong></a> : Un think tank qui œuvre en faveur d’une économie décarbonée.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>© 2024 - Conception Responsable de Service Numérique</p>
-        <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
+        </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
+```

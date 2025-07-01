@@ -1,85 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lancer une Démarche d'Écoconception - Conception Responsable</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guide pratique pour lancer une démarche d'écoconception : processus, rôles de l'équipe et feuille de route.">
+    <meta name="keywords" content="écoconception, démarche, processus, feuille de route, rôles, Green IT">
+    <meta name="author" content="France Travail">
+    <title>Lancer la Démarche - Conception Responsable</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1><a href="../index.html">Conception Responsable de Service Numérique</a></h1>
-      <ul class="nav-links">
-        <li><a href="../impacts/impacts.html">Impacts</a></li>
-        <li><a href="../principes/definition.html">Principes</a></li>
-        <li><a href="../bonnes-pratiques/index.html">Bonnes Pratiques</a></li>
-        <li><a href="index.html" class="active">Mise en Œuvre</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="breadcrumb">
-    <a href="../index.html">Accueil</a> &gt;
-    <a href="index.html">Mise en Œuvre</a> &gt;
-    Lancer la démarche
-  </div>
-  <main class="container">
-    <section class="hero-section">
-      <h1>Lancer une Démarche d'Écoconception</h1>
-    </section>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-    <section>
-      <h2>Processus opérationnel pour un service</h2>
-      <p>La démarche d'écoconception s'adapte selon que vous travaillez sur un nouveau service ou sur un service déjà en place.</p>
-      
-      <div class="objectives-grid" style="margin-top: 2rem;">
-        <div class="objective-card">
-            <h3 style="color: var(--secondary-color);">Nouveau service ("Écoconception by design")</h3>
-            <ul>
-                <li><strong>Démarrage :</strong> Organiser la prise en compte de l’écoconception et évaluer la maturité de l'équipe.</li>
-                <li><strong>Conception :</strong> Appliquer les bonnes pratiques d’écoconception.</li>
-                <li><strong>Validation du service :</strong> S'assurer que le service est bien écoconçu.</li>
-                <li><strong>Suivi des indicateurs (KPI) :</strong> Piloter les indicateurs définis en amont.</li>
-            </ul>
+    <header role="banner">
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="../index.html" class="logo-link" title="Retour à l'accueil">
+                    <img src="../assets/images/logo.svg" alt="Conception Responsable de Services Numériques - Accueil" class="logo" width="200" height="40">
+                </a>
+                
+                <button class="nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-impacts">
+                            Impacts
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-impacts" aria-label="Sous-menu Impacts">
+                            <li><a href="../impacts/empreinte-environnementale.html">Empreinte environnementale</a></li>
+                            <li><a href="../impacts/empreinte-societale.html">Empreinte sociétale</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-principes">
+                            Principes
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-principes" aria-label="Sous-menu Principes">
+                            <li><a href="../principes/definition.html">Définition</a></li>
+                            <li><a href="../principes/benefices.html">Bénéfices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-bonnes-pratiques">
+                            Bonnes Pratiques
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-bonnes-pratiques" aria-label="Sous-menu Bonnes Pratiques">
+                            <li><a href="../bonnes-pratiques/strategie-pilotage.html">Stratégie & Pilotage</a></li>
+                            <li><a href="../bonnes-pratiques/ux.html">UX Design</a></li>
+                            <li><a href="../bonnes-pratiques/ui.html">UI Design</a></li>
+                            <li><a href="../bonnes-pratiques/developpement.html">Développement</a></li>
+                            <li><a href="../bonnes-pratiques/architecture.html">Architecture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="menu-mise-en-oeuvre">
+                            Mise en Œuvre
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="menu-mise-en-oeuvre" aria-label="Sous-menu Mise en Œuvre">
+                            <li><a href="lancer-demarche.html">Lancer la démarche</a></li>
+                            <li><a href="outils-ressources.html">Outils & Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Lancer une Démarche d'Écoconception</h1>
+                <p class="hero-subtitle">Comment passer de la théorie à la pratique ?</p>
+            </div>
+        </section>
+
+        <section id="process" class="practice-section section-bg-alt" aria-labelledby="process-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">⚙️</span>
+                    <h2 id="process-title">Processus opérationnel pour un service</h2>
+                </div>
+                 <div class="practice-details-grid" style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div class="practice-how-to" style="flex: 1;">
+                        <h3>Nouveau service ("by design")</h3>
+                        <ul>
+                            <li><strong>Démarrage :</strong> Organiser la prise en compte de l’écoconception et évaluer la maturité de l'équipe.</li>
+                            <li><strong>Conception :</strong> Appliquer les bonnes pratiques d’écoconception.</li>
+                            <li><strong>Validation :</strong> S'assurer que le service est bien écoconçu.</li>
+                            <li><strong>Suivi :</strong> Piloter les indicateurs (KPI) définis en amont.</li>
+                        </ul>
+                    </div>
+                    <div class="practice-how-to" style="flex: 1;">
+                        <h3>Service existant ("Stock")</h3>
+                        <ul>
+                             <li><strong>Démarrage :</strong> Cadrer le périmètre et évaluer la maturité de l'équipe.</li>
+                            <li><strong>Diagnostic :</strong> Démarrer un diagnostic et planifier les améliorations.</li>
+                            <li><strong>Mise en conformité :</strong> Appliquer les bonnes pratiques préconisées.</li>
+                            <li><strong>Suivi :</strong> Piloter les indicateurs pour mesurer les gains.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer" style="height: 4rem;"></div>
+
+        <section id="roles" class="objectives" aria-labelledby="roles-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem; justify-content: center;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">👥</span>
+                    <h2 id="roles-title">Rôles et responsabilités de l'équipe</h2>
+                </div>
+                <div class="objectives-grid">
+                    <div class="objective-card"><h3>PO/PM</h3><p>Inscrire l’écoconception dans la stratégie du service (épics, features, US).</p></div>
+                    <div class="objective-card"><h3>UX Designer</h3><p>Minimiser le nombre de fonctionnalités et d’actions dans le parcours.</p></div>
+                    <div class="objective-card"><h3>UI Designer</h3><p>Concevoir des interfaces simples et épurées.</p></div>
+                    <div class="objective-card"><h3>Développeur</h3><p>Écrire un code propre et optimisé.</p></div>
+                    <div class="objective-card"><h3>Testeur</h3><p>Intégrer des exigences d’écoconception aux tests.</p></div>
+                    <div class="objective-card"><h3>Architecte</h3><p>Garantir un socle commun et cohérent.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-spacer" style="height: 4rem;"></div>
+        
+        <section id="roadmap" class="practice-section section-bg-alt" aria-labelledby="roadmap-title">
+            <div class="container">
+                <div class="practice-header" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <span class="header-icon" aria-hidden="true" style="font-size: 2.5rem;">🚀</span>
+                    <h2 id="roadmap-title">Exemple de feuille de route</h2>
+                </div>
+                <div class="practice-intro">
+                    <p>Déployer l'écoconception à l'échelle d'une organisation peut suivre ces grandes phases :</p>
+                </div>
+                <div class="practice-how-to">
+                    <ol>
+                        <li><strong>Preuve de concept (POC) & Création de formations :</strong> Tester la démarche sur un périmètre restreint et construire des modules de formation.</li>
+                        <li><strong>Diffusion des formations :</strong> Former les collaborateurs et les partenaires externes.</li>
+                        <li><strong>Déploiement sur des services pilotes :</strong> Accompagner plusieurs équipes produit (diagnostic, ateliers, bonnes pratiques).</li>
+                        <li><strong>Industrialisation de la démarche :</strong> Intégrer l'écoconception dans les standards de l'entreprise (documentation, modèles, workflows).</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Ce guide pratique de conception responsable est un projet open source porté par France Travail pour promouvoir des pratiques numériques plus durables.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contribuer</h3>
+                <p>Rejoignez-nous sur GitHub pour améliorer ce guide et partager vos bonnes pratiques.</p>
+                <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" class="github-link" rel="external noopener noreferrer">
+                    Contribuer sur GitHub
+                    <span class="visually-hidden">(nouvelle fenêtre)</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <nav aria-label="Liens ressources">
+                    <ul>
+                        <li><a href="outils-ressources.html">Outils et ressources</a></li>
+                        <li><a href="https://www.greenit.fr/" rel="external noopener noreferrer">GreenIT.fr <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                        <li><a href="https://collectif.greenit.fr/" rel="external noopener noreferrer">Collectif Green IT <span class="visually-hidden">(nouvelle fenêtre)</span></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="objective-card">
-            <h3 style="color: var(--secondary-color);">Service existant ("Stock")</h3>
-            <ul>
-                <li><strong>Démarrage :</strong> Cadrer le périmètre et évaluer la maturité de l'équipe.</li>
-                <li><strong>Diagnostic du service :</strong> Démarrer un diagnostic et planifier les améliorations.</li>
-                <li><strong>Mise en conformité :</strong> Appliquer les bonnes pratiques d’écoconception préconisées.</li>
-                <li><strong>Suivi des indicateurs (KPI) :</strong> Piloter les indicateurs pour mesurer les gains.</li>
-            </ul>
+        <div class="footer-bottom">
+            <p>© 2024 - Conception Responsable de Services Numériques - Projet Open Source</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section>
-      <h2>Rôles et responsabilités de l'équipe</h2>
-      <ul>
-        <li><strong>PO/PM :</strong> Inscrire l’écoconception dans la stratégie du service (épics, features, US).</li>
-        <li><strong>UX Designer :</strong> Minimiser le nombre de fonctionnalités et d’actions dans le parcours utilisateur.</li>
-        <li><strong>UI Designer :</strong> Concevoir des interfaces utilisateur simples et épurées.</li>
-        <li><strong>Développeur :</strong> Écrire un code propre et optimisé.</li>
-        <li><strong>Testeur :</strong> Utiliser un outil de mesure de l’impact environnemental et intégrer des exigences d'écoconception aux tests.</li>
-        <li><strong>Architecte :</strong> Garantir un socle commun et cohérent pour les équipes produits.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Exemple de feuille de route</h2>
-      <p>Déployer l'écoconception à l'échelle d'une organisation peut suivre ces grandes phases :</p>
-      <ul>
-        <li><strong>Preuve de concept (POC) & Création de formations :</strong> Tester la démarche sur un périmètre restreint et construire des modules de formation (sensibilisation, modules par métier).</li>
-        <li><strong>Diffusion des formations :</strong> Former les collaborateurs et les partenaires externes.</li>
-        <li><strong>Déploiement sur des services pilotes :</strong> Accompagner plusieurs équipes produit (diagnostic, ateliers, bonnes pratiques).</li>
-        <li><strong>Industrialisation de la démarche :</strong> Intégrer l'écoconception dans les standards de l'entreprise (documentation, modèles, workflows).</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>©&nbsp;2024&nbsp;- Conception Responsable de Service Numérique</p>
-    <p>Projet Open Source - <a href="https://github.com/France-Travail/sensibilisation-conception-responsable" target="_blank">Contribuer sur GitHub</a></p>
-  </footer>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
