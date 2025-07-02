@@ -4,7 +4,7 @@
 
 Ce dépôt contient le code source d'un site web statique de sensibilisation à la conception responsable de services numériques. L'objectif est de fournir une ressource pédagogique, simple et accessible pour comprendre les enjeux et les bonnes pratiques liés à la réduction de l'empreinte environnementale et sociale du numérique.
 
-Il est complémentaire au Référentiel d'écoconception, également disponible sur github (https://github.com/France-Travail/referentiel-ecoconception)[https://github.com/France-Travail/referentiel-ecoconception]
+Il est complémentaire au Référentiel d'écoconception, également disponible sur github https://github.com/France-Travail/referentiel-ecoconception
 
 Ce projet est destiné à être partagé librement et amélioré par la communauté.
 
