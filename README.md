@@ -8,7 +8,7 @@ Il est complémentaire au Référentiel d'écoconception, également disponible 
 
 Ce projet est destiné à être partagé librement et amélioré par la communauté.
 
-## 🌍 À propos du site
+## À propos du site
 
 Le site est structuré en plusieurs sections clés pour guider l'utilisateur, du pourquoi au comment :
 
@@ -21,7 +21,7 @@ Il est consultable à l'adresse : <https://france-travail.github.io/sensibilisat
 
 ---
 
-## 🚀 Utilisation
+## Utilisation
 
 Aucune installation complexe n'est requise. Le site est entièrement statique (HTML/CSS).
 
@@ -36,7 +36,7 @@ Aucune installation complexe n'est requise. Le site est entièrement statique (H
 3.  Ouvrez le fichier `index.html` directement dans votre navigateur web.
 
 ---
-## 📂 Structure du projet
+## Structure du projet
 
 Le projet suit une arborescence de fichiers simple et logique pour faciliter la navigation et les contributions.
 Absolument. Voici une proposition de fichier README.md complet pour votre projet GitHub. Il explique le but du projet, comment l'utiliser et comment y contribuer.
@@ -48,7 +48,7 @@ Ce dépôt contient le code source d'un site web statique de sensibilisation à 
 
 Ce projet est destiné à être partagé librement et amélioré par la communauté.
 
-🌍 À propos du site
+## À propos du site
 Le site est structuré en plusieurs sections clés pour guider l'utilisateur, du pourquoi au comment :
 
 Impacts du Numérique : Une vue d'ensemble des conséquences environnementales (consommation de ressources, GES) et sociales (fracture numérique, accessibilité) de la technologie.
@@ -59,7 +59,7 @@ Bonnes Pratiques par Métier : Des fiches pratiques et actionnables pour chaque 
 
 Mise en Œuvre : Un guide pour lancer une démarche d'écoconception et une liste d'outils et de ressources pour aller plus loin.
 
-🚀 Utilisation
+## Utilisation
 Aucune installation complexe n'est requise. Le site est entièrement statique (HTML/CSS).
 
 Clonez le dépôt sur votre machine locale :
@@ -74,9 +74,9 @@ Bash
 cd votre-nom-du-depot
 Ouvrez le fichier index.html directement dans votre navigateur web.
 
-📂 Structure du projet
+## Structure du projet
 Le projet suit une arborescence de fichiers simple et logique pour faciliter la navigation et les contributions.
-## 📂 Structure du projet
+
 
 ```text
 /
@@ -109,7 +109,7 @@ Le projet suit une arborescence de fichiers simple et logique pour faciliter la 
 ```
 
 
-## 🤝 Contribution
+## Contribution
 
 Les contributions sont ce qui fait vivre la communauté open source. Toutes vos suggestions pour améliorer ce projet sont les **bienvenues**.
 
@@ -125,6 +125,6 @@ N'hésitez pas à ouvrir une *issue* au préalable pour discuter des changements
 
 ---
 
-## 📜 Licence
+## Licence
 
 Ce projet est distribué sous la **Licence MIT**. Consultez le fichier `LICENSE` pour plus d'informations.
