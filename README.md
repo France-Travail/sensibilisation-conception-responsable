@@ -17,6 +17,8 @@ Le site est structuré en plusieurs sections clés pour guider l'utilisateur, du
 * **Bonnes Pratiques par Métier** : Des fiches pratiques et actionnables pour chaque rôle de l'équipe produit (Stratégie, UX, UI, Développement, Architecture).
 * **Mise en Œuvre** : Un guide pour lancer une démarche d'écoconception et une liste d'outils et de ressources pour aller plus loin.
 
+Il est consultable à l'adresse : <https://france-travail.github.io/sensibilisation-conception-responsable/>
+
 ---
 
 ## 🚀 Utilisation
