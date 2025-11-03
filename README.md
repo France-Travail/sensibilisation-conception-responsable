@@ -121,7 +121,7 @@ Si vous avez une idée, veuillez suivre ces étapes :
 4.  Poussez vers la branche (`git push origin feature/NouvelleFonctionnalite`).
 5.  Ouvrez une "Pull Request".
 
-N'hésitez pas à ouvrir une *issue* au préalable pour discuter des changements majeurs que vous souhaiteriez apporter.
+N'hésitez pas à ouvrir une *issue* au préalable, ou à nous contacter @ <oss.00619@francetravail.fr> pour discuter des changements majeurs que vous souhaiteriez apporter.
 
 ---
 
